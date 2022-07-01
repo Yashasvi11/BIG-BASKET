@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap");
+.category-nav > * {
+  margin: 0;
+  padding: 0;
+}
+
+.category{
+  animation: 300ms ease-in-out forwards;
+    transform-origin: top center;
+
+}
+
+
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+@keyframes growUp {
+    0% {
+        transform: scaleY(1)
+    }
+    20% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(0)
+    }
+}
+
+
+.category-wrapper{
+  display: block !important;
+}
+
+
+
+
+
+.category-nav {
+  /* border: 1px solid orange; */
+  width: 90vw;
+  margin: auto;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+  margin-top: 5px;
+  box-shadow: 0px 2px 5px #eaeaea;
+  /* flex-wrap: wrap; */
+}
+.category-nav .nav-items > *{
+  margin: 0;
+  padding: 0;
+}
+.category-nav .nav-items {
+  max-height: 45px;
+  /* border: 1px solid blue; */
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  /* flex-wrap: wrap; */
+  transition: all 0.5s ease;
+  padding: 10px 20px;
+
+}
+.category-nav .nav-items:hover {
+  background-color: #60a000;
+  color: white;
+}
+.category-nav .nav-items:hover i {
+  /* background-color: #60a000; */
+  color: #c6ff71;
+}
+
+.category-nav .nav-category {
+  background-color: #84c225;
+  font-weight: 600;
+  color: white;
+}
+.category-nav .nav-offer {
+  font-weight: 600;
+  cursor: pointer;
+}
+.category-nav .nav-offer i,
+.nav-express i {
+  color: red;
+}
+.category-nav .nav-speciality i {
+  color: #84c225;
+}
+
+/* for javascript */
+#categoryContainer {
+  display: none;
+}
+.category > *{
+  padding: 0;
+  margin: 0;
+}
+.category {
+  width: 90vw;
+  margin: 0 auto 10px;
+  overflow-x: hidden;
+  height: 70vh;
+  display: grid;
+  /* grid: "1fr 1fr 1fr 1fr 1fr"; */
+  grid-template-columns: repeat(5, 1fr);
+  font-family: "Roboto Slab", serif;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  justify-content: space-between;
+}
+
+.category-division {
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 5%; */
+  overflow: hidden;
+  /* border: 1px solid blue; */
+  width: 18vw;
+}
+.category .category-division .divisions-list {
+  border: 1px solid #eaeaea;
+  display: flex;
+  min-height: 7%;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  padding-left: 3%;
+  margin: 0;
+}
+.category .category-division .divisions-list:hover {
+  background-color: #eaeaea;
+  font-weight: 400;
+}
+
+#category-division-2 {
+  background-color: #eaeaea;
+  animation: 400ms ease-in-out forwards;
+  transform-origin: top center;
+}
+#category-division-3 {
+  animation: 400ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+#category-division-2 .divisions-list:hover {
+  background-color: white;
+}
+#category-division-3 .divisions-list:hover,
+#category-division-4 .divisions-list:hover {
+  background-color: white;
+  color: #84c225;
+}
+
+#category-division-4{
+  border: none;
+}
+#category-division-4 h4 {
+  color: #84c225;
+  
+}
+
+#category-division-5 img {
+  height: 100%;
+}
+
+#category-division-3 .divisions-list,
+#category-division-4 .divisions-list {
+  border: none;
+}
+
+.category-mobile {
+  display: none;
+}
+#nav-cateogry-m{
+  display: none;
+}
+
+.pointer{
+  color: rgb(115, 255, 0);
+  /* border: 1px solid blue; */
+  padding: 5px 10px;
+  animation: moveLeftRight 1000ms ease-in-out forwards infinite;
+  transform-origin: top center;
+
+}
+@keyframes moveLeftRight{
+  0%{
+    transform: translate(0px);
+  }
+  
+  100%{
+    transform: translate(10px);
+  } 
+}
+/* 
+animation: 300ms ease-in-out forwards;
+    transform-origin: top center;
+
+}
+
+
+
+
+ */
+@media screen and (max-width: 1000px) {
+  #category-division-5 {
+    display: none;
+  }
+  .category-division{
+    width: 22vw;
+  }
+}
+
+
+@media screen  and (max-width:768px) {
+  .category-wrapper{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 739px) {
+  #nav-speciality
+  {
+    display: none;
+  }
+  #category-division-4
+  {
+    display: none;
+  }
+
+  .category-division{
+    /* border: 1px solid blue; */
+    width: 30vw;
+  }
+  }
+  

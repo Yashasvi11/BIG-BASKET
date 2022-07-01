@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="../assets/icons/bigbasket.ico" />
+    <title>Big Basket</title>
+
+    <!-- External Css file Linked -->
+    <link rel="stylesheet" href="../css/homePage.css" />
+    <link rel="stylesheet" href="../css/category.css" />
+    <link rel="stylesheet" href="../css/mobileCategory.css" />
+    <link rel="stylesheet" href="../css/searchProduct.css" />
+</head>
+
+<body id="home-page-body">
+    <!-- ############################# Nav bar for Desktop View ##############################################################################-->
+    <nav class="nav-bar1">
+        <!-- Header & Navbar -->
+        <div class="main-header">
+            <div class="user-detail">
+                <div class="phone">
+                    <span id="login-userphone">1860-123-1000 </span>
+                </div>
+                <div id="location" class="location">
+                    <!-- dropdown for location -->
+                    <a class="location-dropdown-btn">
+                        <span id="login-city">Locate Us</span></a>
+                    <div id="locationContent" class="location-content">
+                    </div>
+                </div>
+                <div class="login-singup">
+                    <span id="login-sign">Login/SignUp</span>
+                    <div class="user-container" id="userContainer">
+                        <div class="login-content">
+                            <a href="#" id="myOrders"> My Orders</a>
+                            <a href="#" id="myProfile"> My Account</a>
+                            <a href="#" id="user-logout">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NavBar -->
+        <div class="navbar">
+            <div class="brand-detail">
+                <div id="logo" class="logo">
+                    <img src="../assets/images/LogoG1.png" alt="logo" class="logo" />
+                </div>
+            </div>
+
+            <div class="search-container">
+                <!-- <form action=""> -->
+                <input type="text" placeholder="Search Product" name="search" id="searchBar" />
+            </div>
+
+            
+        </div>
+    </nav>
+
+    <!-- ################################  NAVBAR 2 For MOBILE VIEW ############################################################################ -->
+    <div class="nav-bar-2">
+        <!-- Side Bar  -->
+        <p id="para"></p>
+        <!-- paragraph tag  for showing sidebar  -->
+        <div id="sidebar" class="side-bar">
+            <div class="user-detail-mobileview">
+                <span id="username-mobileview">Welcome</span>
+                <p id="user-location-mobileview">Location</p>
+                <p id="user-phone-mobileview"> PhoneNo</p>
+            </div>
+            <a href="#" id="MyProfileMobileView">My Profile</a>
+            <a href="#" id="MyOrderMobileView">My Orders</a>
+            <a href="#">OFFERS</a>
+            <a href="#">BB EXPRESS</a>
+            <a href="#">MORE SHOP</a>
+            <a href="#" id="logout-mobileview">Logout</a>
+        </div>
+
+        <!-- main-navbar -->
+        <nav id="nav-bar" class="navbar2">
+            <div class="top-row">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" id="open-nav"></a>
+                    </li>
+                    <li class="menu-item">
+                        <button href="#" id="open-login2"> </button>
+                    </li>
+                    <li class="menu-item" id="mobileLocation">
+                        <a href="#"></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" id="myCart-mobile"> </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-row">
+                <div class="search-container2">
+
+                    <input type="text" placeholder="Search Product" name="search" id="searchBarMob" />
+                    <button type="submit">
+                <i id="cross-icon" class="fa fa-times" aria-hidden="true"></i>
+              </button>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- #################################################  LOGIN FORM ######################################### -->
+
+    <div class="login-main" id="main-1">
+        <a id="close-btn" href="#"><i class="fas fa-times"></i>
+      </a>
+        <input type="checkbox" id="chk" aria-hidden="true" />
+
+        <div class="signup">
+            <form action="#">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input class="form-input" type="text" id="register-name" name="name" placeholder="User name" required="" />
+                <input class="form-input" type="email" id="register-email" name="email" placeholder="Email" required="" />
+                <input class="form-input" id="register-password" type="password" name="pswd" placeholder="Password" required="" />
+                <input class="form-input" id="register-phone" type="phone" name="phone" placeholder="Phone" required="" />
+                <input class="form-input" id="register-city" type="text" name="city" placeholder="City" required="" />
+                <button type="submit" id="register-user">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="#">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input class="form-input" id="login-email" type="email" name="email" placeholder="Email" required="" />
+                <input class="form-input" id="login-password" type="password" name="pswd" placeholder="Password" required="" />
+                <button type="submit" id="login-user">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ####################### Category Wrapper FOR CATEGORY #########################################-->
+    <div class="category-wrapper">
+        <nav class="category-nav ">
+            <div class="nav-category nav-items" id="nav-cateogry-btn">
+                <h5>SHOP BY CATEGORY</h5>
+            </div>
+
+            <div class="nav-offer nav-items">
+                <h5>OFFERS</h5>
+            </div>
+
+            <div class="nav-express nav-items">
+                <h5>EXPRESS</h5>
+            </div>
+
+            <div class="nav-speciality nav-items" id="nav-speciality">
+                <h5>Our Speciality</h5>
+            </div>
+        </nav>
+        <div class="category " id="categoryContainer">
+            <!-- change category-division to category-division-list  -->
+            <div class="category-division" id="category-division-1">
+                <li class="divisions-list" id="firstListA" index='0'>Fruits & Vegetables</li>
+                <li class="divisions-list" id="firstListB" index='1'>Foodgrains, Oil & Masala</li>
+                <li class="divisions-list" id="firstListC">Bakery, Cakes & Dairy</li>
+                <li class="divisions-list" id="firstListD">Beverages</li>
+                <li class="divisions-list" id="firstListE">Snacks & Branded Foods</li>
+                <li class="divisions-list" id="firstListF">Beauty & Hygiene</li>
+                <li class="divisions-list" id="firstListG">Cleaning & Household</li>
+                <li class="divisions-list" id="firstListH">Kitchen, Garden & liets</li>
+                <li class="divisions-list" id="firstListI">Eggs, Meat & Fish</li>
+                <li class="divisions-list" id="firstListJ">Gourmet & World Food</li>
+                <li class="divisions-list" id="firstListK">Baby Care</li>
+            </div>
+
+            <div class="category-division" id="category-division-2">
+                <p class="divisions-list" id="secondListA1">Fresh Vegetables</p>
+                <p class="divisions-list" id="secondListA2">Herbs & Seasonings</p>
+                <p class="divisions-list" id="secondListA3">Fresh Fruits</p>
+                <p class="divisions-list" id="secondListA4">Organic Fruits & Vegetables</p>
+                <p class="divisions-list" id="secondListA5">Cuts & Sprouts</p>
+                <p class="divisions-list" id="secondListA6">Exotic Fruits & Veggies</p>
+                <p class="divisions-list" id="secondListA7">Flower Bouquets, Bunches</p>
+            </div>
+
+            <div class="category-division" id="category-division-3">
+                <p class="divisions-list">Potato, Onion & Tomato</p>
+                <p class="divisions-list">Cucumber & Capsicum</p>
+                <p class="divisions-list">Leafy Vegetables</p>
+                <p class="divisions-list">Root Vegetables</p>
+                <p class="divisions-list">Beans, Brinjals & Okra</p>
+                <p class="divisions-list">Cabbage & Cauliflower</p>
+                <p class="divisions-list">Gourd, Pumpkin, Drumstick</p>
+                <p class="divisions-list">Speciality</p>
+
+            </div>
+
+            <div class="category-division" id="category-division-4">
+                <h4 class="divisions-list">Popular Searches</h4>
+                <p class="divisions-list">Foodgrains, Oil & Masala</p>
+                <p class="divisions-list">Bakery, Cakes & Dairy</p>
+                <p class="divisions-list">Snacks & Branded Foods</p>
+                <p class="divisions-list">Beauty & Hygiene</p>
+            </div>
+
+            <div class="category-division" id="category-division-5">
+                <img src="../assets/images/categoryImageOne.jpg" alt="Category" />
+            </div>
+        </div>
+        <!-- category-mobile -->
+        <!-- nav start -->
+
+        <nav class="nav-category-m" id="nav-cateogry-m">
+            <h5>SHOP BY CATEGORY</h5>
+        </nav>
+        <!-- nav end -->
+
+
+        <div class="category-mobile" id="category-mobile">
+            <!-- list-primary start -->
+
+            <ul class="list-head">
+                <h4>Fruits & Vegetables</h4>
+                <div class="items">
+                    <li class="list-items">Fresh Vegetables</li>
+                    <li class="list-items">Herbs & Seasonings</li>
+                    <li class="list-items">Organic Fruits & Vegetables</li>
+                    <li class="list-items">Exotic Fruits & Vegies</li>
+                </div>
+            </ul>
+
+            <ul class="list-head">
+                <h4>Foodgains,Oil & Masala</h4>
+                <div class="items">
+                    <li class="list-items">Rice & Rice Products</li>
+                    <li class="list-items">Dal & Pulses</li>
+                    <li class="list-items">Organic Staples</li>
+                    <li class="list-items">Edible Oils & Ghee</li>
+                    <li class="list-items">Masala & Spices</li>
+                    <li class="list-items">Dry Fruits</li>
+                </div>
+            </ul>
+
+            <ul class="list-head">
+                <h4>Bakery,Cakes & Dairy</h4>
+                <div class="items">
+                    <li class="list-items">Dairy</li>
+                    <li class="list-items">Breads & Buns</li>
+                    <li class="list-items">Cookies, Rusk & Khari</li>
+                    <li class="list-items">Ice-Cream & Deserts</li>
+                    <li class="list-items">Bakery Snacks</li>
+                    <li class="list-items">Cakes & Pasteries</li>
+                </div>
+            </ul>
+            <!-- change list-head to category-list-head -->
+            <ul class="list-head">
+                <h4>Beverages</h4>
+                <div class="items">
+                    <li class="list-items">Energy & Soft Drinks</li>
+                    <li class="list-items">Water</li>
+                    <li class="list-items">Health Drink, Supplement</li>
+                    <li class="list-items">Tea</li>
+                    <li class="list-items">Fruit Juice & Drinks</li>
+                </div>
+            </ul>
+
+            <ul class="list-head">
+                <h4>Eggs,Meat & Fish</h4>
+                <div class="items">
+                    <li class="list-items">Poultry</li>
+                    <li class="list-items">Sausages,Bacon, & Salami</li>
+                    <li class="list-items">Mutton & Lamb</li>
+                    <li class="list-items">Marinades</li>
+                    <li class="list-items">Fish & Seafood</li>
+                    <li class="list-items">Pork & Other Meats</li>
+                </div>
+            </ul>
+
+            <!-- list-primary end -->
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- ############################################################################################################ -->
+    <!--  search resultd -->
+    <div class="items-main-container" id="productList">
+
+    </div>
+
+    <div id="main-content-wrapper" class="main-content-wrapper">
+        <div id="page-integrator-wrapper"></div>
+        <!-- ######################################################################################################### -->
+        <div id="home-page-wrapper" class="home-page-wrapper">
+            <section class="main-carousel">
+                <div class="carousel-container">
+                    <img src="../assets/images/car-img1.jpg" alt="Carousal Offers 1" class="slides" style="width: 100%" />
+                    <img src="../assets/images/car-img2.jpg" alt="Carousal Offers 2" class="slides" style="width: 100%" />
+                    <img src="../assets/images/car-img3.jpg" alt="Carousal Offers 3" class="slides" style="width: 100%" />
+                    <img src="../assets/images/car-img4.jpg" alt="Carousal Offers 4" class="slides" style="width: 100%" />
+                    <img src="../assets/images/car-img5.jpg" alt="Carousal Offers 5" class="slides" style="width: 100%" />
+                </div>
+            </section>
+
+            <!-- ############################################################################################### -->
+            <section class="bank-offers">
+                <h2>Bank Offers</h2>
+                <!-- for section content -->
+                <div class="bank-section">
+                    <div class="card1">
+                        <img src="../assets/images/digibank-img.jpg" alt="Avatar" />
+                    </div>
+                    <div class="card2">
+                        <img src="../assets/images/induslnd-bank-img.jpg" alt="Avatar" />
+                    </div>
+                    <div class="card3">
+                        <img src="../assets/images/paytm-img.jpg" alt="Avatar" />
+                    </div>
+                    <div class="card4">
+                        <img src="../assets/images/rbl-img.jpg" alt="Avatar" />
+                    </div>
+                </div>
+            </section>
+            <!-- ############################################################################################### -->
+            <div class="container1">
+                <div class="topOffers">
+                    <div style="text-align: center" class="topOffers-wrapper1">
+                        Top Offers
+                    </div>
+                    <hr />
+                    <div class="topOffers-wrapper2">
+                        <div class="topOffers-wrapper21">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/09b2e90a-29fc-46fd-b774-c598585ac69e/hp_topoffersStorefront_m_480_251221_01.jpg" alt="wrapper-offers"
+                                /></a>
+                        </div>
+                        <div class="topOffers-wrapper22">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/09b2e90a-29fc-46fd-b774-c598585ac69e/hp_topoffersStorefront_m_480_251221_02.jpg" alt="wrapper-offers"
+                                /></a>
+                        </div>
+                        <div class="topOffers-wrapper23">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/09b2e90a-29fc-46fd-b774-c598585ac69e/hp_topoffersStorefront_m_480_251221_03.jpg" alt="wrapper-offers"
+                                /></a>
+                        </div>
+                        <div class="topOffers-wrapper24">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/09b2e90a-29fc-46fd-b774-c598585ac69e/hp_topoffersStorefront_m_480_251221_04.jpg" alt="wrapper-offers"
+                                /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fruitsAndVegetables">
+                    <div style="text-align: center" class="FruitsAndVegetables-header">
+                        Fruits And Vegetables
+                    </div>
+                    <hr />
+                    <div class="fruitsAndVegetable-body">
+                        <div class="fruitsAndVegetables-wrapper1">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/af222840-0bba-4be2-9db5-7f7ef1d8daea/hp_under_10_fnvStorefront_m_221221_01.jpg" alt="veg-wrappers"
+                                /></a>
+                        </div>
+                        <div class="fruitsAndVegetables-wrapper2">
+                            <div class="fruitsAndVegetables-wrapper21">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/af222840-0bba-4be2-9db5-7f7ef1d8daea/hp_Fresh_Fruits_fnvStorefront_m_221221_02.jpg" alt="veg-wrappers"
+                                    /></a>
+                            </div>
+                            <div class="fruitsAndVegetables-wrapper22">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/af222840-0bba-4be2-9db5-7f7ef1d8daea/hp_Exotics_Corner_fnvStorefront_m_221221_05.jpg" alt="veg-wrappers"
+                                    /></a>
+                            </div>
+                        </div>
+                        <div class="fruitsAndVegetables-wrapper3">
+                            <div class="fruitsAndVegetables-wrapper31">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/af222840-0bba-4be2-9db5-7f7ef1d8daea/hp_Fresh_Vegetables_fnvStorefront_m_221221_03.jpg" alt="veg-wrapper"
+                                    /></a>
+                            </div>
+                            <div class="fruitsAndVegetables-wrapper32">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/af222840-0bba-4be2-9db5-7f7ef1d8daea/hp_Cut_&_Sprouts_fnvStorefront_m_221221_04.jpg" alt="veg-wrapper"
+                                    /></a>veg-wrapper
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yourDailyStaples">
+                    <div style="text-align: center" class="yourDailyStaples-wrapper1">
+                        Your Daily Staples
+                    </div>
+                    <hr />
+                    <div class="yourDailyStaples-wrapper2">
+                        <div class="yourDailyStaples-wrapper21">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/a886f810-caec-4ee8-8a5c-87e9133d3dbd/hp_Att_&_flour_staplesStorefront_m_480_221221_01.jpg" alt="daily-staples"
+                                /></a>
+                        </div>
+                        <div class="yourDailyStaples-wrapper22">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/a886f810-caec-4ee8-8a5c-87e9133d3dbd/hp_Rice_&_Rice_products_staplesStorefront_m_480_221221_02.jpg"
+                                    alt="daily-staples" /></a>
+                        </div>
+                        <div class="yourDailyStaples-wrapper23">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/a886f810-caec-4ee8-8a5c-87e9133d3dbd/hp_Dal_&_Pulses_staplesStorefront_m_480_221221_03.jpg" /></a>
+                        </div>
+                        <div class="yourDailyStaples-wrapper24">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/a886f810-caec-4ee8-8a5c-87e9133d3dbd/hp_Cooking_oils_&_Ghee_staplesStorefront_m_480_221221_04.jpg"
+                                    alt="daily-staples" /></a>
+                        </div>
+                        <div class="yourDailyStaples-wrapper25">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/a886f810-caec-4ee8-8a5c-87e9133d3dbd/hp_Dry_Fruits_staplesStorefront_m_480_221221_05.jpg" alt="daily-staples"
+                                /></a>
+                        </div>
+                        <div class="yourDailyStaples-wrapper26">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/a886f810-caec-4ee8-8a5c-87e9133d3dbd/hp_Salt_Sugar_&_Jaggery_staplesStorefront_m_480_221221_06.jpg"
+                                    alt="daily-staples" /></a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="winterBeverages">
+                    <div style="text-align: center" class="winterBeverages-header">
+                        Winter Beverages
+                    </div>
+                    <hr />
+                    <div class="winterBeverages-body">
+                        <div class="winterBeverages-wrapper1">
+                            <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/4d4109a4-fdc9-4f03-acd0-fcea2900938f/hp_Soups_beverages_Storefront_m_221221_01.jpg" alt="Beverages"
+                                /></a>
+                        </div>
+                        <div class="winterBeverages-wrapper2">
+                            <div class="winterBeverages-wrapper21">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/4d4109a4-fdc9-4f03-acd0-fcea2900938f/hp_Tea_beverages_Storefront_m_221221_02.jpg" alt="Beverages"
+                                    /></a>
+                            </div>
+                            <div class="winterBeverages-wrapper22">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/4d4109a4-fdc9-4f03-acd0-fcea2900938f/hp_Coffee_beverages_Storefront_m_221221_03.jpg" alt="Beverages"
+                                    /></a>
+                            </div>
+                        </div>
+                        <div class="winterBeverages-wrapper3">
+                            <div class="winterBeverages-wrapper31">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/4d4109a4-fdc9-4f03-acd0-fcea2900938f/hp_Instant_Coffee_beverages_Storefront_m_221221_04.jpg"
+                                        alt="Beverages" /></a>
+                            </div>
+                            <div class="winterBeverages-wrapper32">
+                                <a href="#"><img src="https://www.bigbasket.com/media/customPage/77880b23-0233-4fad-b54a-a93c998e0d20/2c1d9df8-99a9-4774-b776-c4711e9a36fd/4d4109a4-fdc9-4f03-acd0-fcea2900938f/hp_Health_Drinks_beverages_Storefront_m_221221_05.jpg"
+                                        alt="Beverages" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ############################################################################################## -->
+
+            <section class="sale-carousel">
+                <div class="sale-carousel-container">
+                    <img src="../assets/images/sale1.jpg" alt="Sale-Offers" class="sale-slides" />
+                    <img src="../assets/images/sale2.jpg" alt="Sale-Offers" class="sale-slides" />
+                    <img src="../assets/images/sale3.jpg" alt="Sale-Offers" class="sale-slides" />
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ######################################################################################################## -->
+    <br /><br /><br />
+
+    <footer>
+        <div class="website-info" style="color: slategrey">
+            <h2 style="color: black">Bigbasket – online grocery store</h2>
+            <p>
+                Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains, dairy products and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? India’s first comprehensive
+                online megastore, bigbasket.com, brings a whopping 20000+ products with more than 1000 brands, to over 4 million happy customers. From household cleaning products to beauty and makeup, bigbasket has everything you need for your daily needs.
+                bigbasket.com is convenience personified We’ve taken away all the stress associated with shopping for daily essentials, and you can now order all your household products and even buy groceries online without travelling long distances or
+                standing in serpentine queues. Add to this the convenience of finding all your requirements at one single source, along with great savings, and you will realize that bigbasket- India’s largest online supermarket, has revolutionized the
+                way India shops for groceries. Online grocery shopping has never been easier. Need things fresh? Whether it’s fruits and vegetables or dairy and meat, we have this covered as well! Get fresh eggs, meat, fish and more online at your convenience.
+                Hassle-free Home Delivery options
+            </p>
+            <p>
+                We deliver to 25 cities across India and maintain excellent delivery times, ensuring that all your products from groceries to snacks branded foods reach you in time.
+            </p>
+            <ul>
+                <li>
+                    Slotted Delivery: Pick the most convenient delivery slot to have your grocery delivered. From early morning delivery for early birds, to late-night delivery for people who work the late shift, bigbasket caters to every schedule.
+                </li>
+                <li>
+                    Express Delivery: This super useful service can be availed by customers in cities like Bangalore, Mumbai, Pune, Chennai, Kolkata, Hyderabad and Delhi-NCR in which we deliver your orders to your doorstep in 90 Minutes.
+                </li>
+                <li>
+                    BB Specialty stores: Missed out on buying that essential item from your favorite neighborhood store for tonight’s party? We’ll deliver it for you! From bakery, sweets and meat to flowers and chocolates, we deliver your order in 90 minutes, through a special
+                    arrangement with a nearby specialty store, verified by us.
+                </li>
+            </ul>
+        </div>
+        <!-- <hr> -->
+        <div class="footer-links">
+            <div class="footer-links-first2divs">
+                <div class="footer-div-bigbasket">
+                    <div class="footer-links-heading">BigBasket</div>
+                    <div class="footer-links-li">
+                        <div>
+                            <a href="#">
+                                <li>About Us</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>In News</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>Green bigbasket</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>Privacy Policy</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>Affiliate</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>Terms and Conditions</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>Careers At bigbasket</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>bb Instant</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>bb Daily</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>bb blog</li>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-div-help">
+                    <div class="footer-links-heading">Help</div>
+                    <div class="footer-links-li">
+                        <div>
+                            <a href="#">
+                                <li>FAQs</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>Contact Us</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>bb Wallet FAQs</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>bb Wallet T&Cs</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>Vendor Connect</li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>E-Invoice Compliance for bigbasket Vendors</li>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links-next2divs">
+                <div class="footer-div-downloadapp">
+                    <div class="footer-links-heading">Download Our App</div>
+                    <div class="footer-links-li">
+                        <div>
+                            <a href="#">
+                                <li>
+                                    <img style="height: 9vh; width: 12vw" src="../assets/images/Google-App-store-icon.png" alt="Footers" /></li>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <li>
+                                    <img style="height: 9vh; width: 12vw" src="../assets/images/Apple-App-store-icon.png" alt="Footers" /></li>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-div-getsocial">
+                    <div class="footer-links-heading">Get Social With Us</div>
+                    <div class="footer-links-li">
+                        <div class="footer-links-li-img">
+                            <div>
+                                <a href="#">
+                                    <li><img src="../assets/images/instagram.png" alt="Social" /></li>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <li><img src="../assets/images/WhatsApp.png" alt="Social" /></li>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <li><img src="../assets/images/youtube.png" alt="Social" /></li>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <li>
+                                        <img src="../assets/images/twitter.png" alt="Social" /></li>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <div class="footer-nav-box1">
+                <div class="footer-nav-h1">POPULAR CATEGORIES:</div>
+                <div class="footer-nav-text">
+                    Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes,
+                </div>
+            </div>
+            <div class="footer-nav-box1">
+                <div class="footer-nav-h1">POPULAR BRANDS:</div>
+                <div class="footer-nav-text">
+                    Fresho, BB Royal, Nandini, Kelloggs, 24 Mantra, Saffola, Lizol, Safal, Horlicks, MTR, Fresho Meats, Whisper , Real, Milky Mist, Nivea, Himalaya, Comfort, Sunpure , Bru , Zespri,
+                </div>
+            </div>
+            <div class="footer-nav-box1">
+                <div class="footer-nav-h1">CITIES WE SERVE:</div>
+                <div class="footer-nav-text">
+                    Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore, Madurai, Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Nashik, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore, Chandigarh Tricity, Jaipur, Bhopal,
+                    Noida-Ghaziabad, Kochi, Krishna District, Bhubaneshwar-Cuttack, Guwahati,
+                </div>
+            </div>
+            <div class="footer-nav-box2">
+                <div class="footer-nav-h2">PAYMENT OPTIONS:</div>
+                <div class="footer-nav-text">
+                    <div class="footer-cards">
+                        <div class="footer-cards-image1">
+                            <img src="../assets/images/mastercard-logo copy.png" alt="Payment-Offers" />
+                        </div>
+                        <div class="footer-cards-image1">
+                            <img src="../assets/images/ae.png" alt="Payment-Offers" />
+                        </div>
+                        <div class="footer-cards-image1">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="Payment-Offers" />
+                        </div>
+                        <div class="footer-cards-image1">
+                            <img src="../assets/images/paypal.png" alt="Payment-Offers" />
+                        </div>
+                        <div class="footer-cards-image1">
+                            <img src="https://images.cnbctv18.com/wp-content/uploads/2018/11/MobiKwik-768x447.jpg" alt="Payment-Offers" />
+                        </div>
+                        <div class="footer-cards-image1">
+                            <img src="../assets/images/paytm2.png" alt="Payment-Offers" />
+                        </div>
+                        <div class="footer-cards-image2">Cash On Delivery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="footer-copyright">
+            <div class="footer-copyright-text">
+                Copyright © 2020-2022 Supermarket Grocery Supplies Pvt Ltd
+            </div>
+        </div>
+    </footer>
+
+    <!-- ################################################################################################## -->
+    <script>
+        var myIndex = 0;
+        main_carousel();
+
+        function main_carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1;
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(main_carousel, 2000);
+        }
+
+        // ........................................................................................................
+        var myIndex_sale = 0;
+        sale_carousel();
+
+        function sale_carousel() {
+            var i;
+            var x = document.getElementsByClassName("sale-slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex_sale++;
+            if (myIndex_sale > x.length) {
+                myIndex_sale = 1;
+            }
+            x[myIndex_sale - 1].style.display = "block";
+            setTimeout(sale_carousel, 5000);
+        }
+    </script>
+
+    <!-- External Javascript File Linked -->
+
+    <script type="module" src="../js/homePage.js"></script>
+</body>
+</html>

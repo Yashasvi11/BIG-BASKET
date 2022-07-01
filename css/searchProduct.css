@@ -1,0 +1,213 @@
+/* body {
+  font-family: sans-serif;
+  background-color: #c0c3ce;
+}
+
+* {
+  box-sizing: border-box;
+
+} 
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+  border: 1px solid orange;
+}
+
+#searchBar {
+  width: 100%;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #eaeaea;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+#searchWrapper {
+  position: relative;
+}
+
+#searchWrapper::after {
+  content: "🔍";
+  position: absolute;
+  top: 7px;
+  right: 15px;
+} */
+
+/* * {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    border: none;
+    
+  } */
+  
+  .items-main-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+
+  .item-main-container {
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 2px 5px rgba(185, 185, 185, 0.5);
+    background-color: white;
+    flex-wrap: wrap;
+  }
+  .item-main-container .item-offer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+    padding: 0.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    border: none;
+  }
+  .item-main-container .image-head {
+    margin: auto;
+    max-height: 320px;
+    overflow: none;
+    /* max-width: 450px; */
+    padding: 1vw;
+    flex-direction: column;
+  }
+  .item-main-container .image-head .image {
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    display: flex;
+  }
+  .item-main-container .image-head .image img {
+    height: 270px;
+    border: none;
+    margin: auto;
+    position: relative;
+  }
+  .item-main-container .image-head .veg-icon {
+    color: green;
+    position: relative;
+    z-index: 999;
+    padding: 5px;
+    border: 5px solid green;
+    width: 10px;
+    height: 10px;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-main-container .text-head h4{
+    height: 6vh;
+    margin: 1vh;
+    
+  }
+  .item-main-container .text-description {
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+  .item-main-container .text-description .text-description-price {
+    color: red;
+  }
+  .item-main-container .text-description .delivery-description {
+    display: flex;
+    gap: 10px;
+  }
+  .item-main-container .text-description .delivery-description .delivery-icon i {
+    font-size: 2.5em;
+  }
+  .item-main-container .book-order {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+  }
+  .item-main-container .book-order .quantity-box {
+    width: 40%;
+    height: 35px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    border: none;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px gray;
+  }
+  .item-main-container .book-order .quantity-box .quantity {
+    background-color: grey;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    color: white;
+  }
+  .item-main-container .book-order .quantity-box .quantity-text {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .item-main-container .add-box {
+    width: 40%;
+    height: 35px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    border: none;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px gray;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 240, 237);
+  }
+  .item-main-container .add-box .add-text {
+    color: rgba(27, 26, 26, 0.911);
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  .item-main-container .add-box .add-icon {
+    color: white;
+    font-size: 1.1em;
+}
+
+
+ @media screen and (max-width:320px) {
+  
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+  .item-main-container{
+    min-width: 90vw;
+  }
+  
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+  
+  
+ 
+}
+@media screen and (min-width: 1025px){
+  .items-main-container{
+
+  }
+}

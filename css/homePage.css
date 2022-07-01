@@ -1,0 +1,1482 @@
+/* ######################################     CSS FOR NAVBAR  1 ############################################################### */
+
+.nav-bar1 {
+    display: none;
+}
+
+.nav-bar1 .main-header {
+    width: 90vw;
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.user-detail {
+    margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.phone {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.location {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.login-singup {
+    display: inline-flex;
+}
+
+
+/* For location dropdown */
+
+.location-dropdown-btn {
+    color: black;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* for Login dropdown */
+
+.login-singup {
+    position: relative;
+    display: inline-block;
+}
+
+.user-container {
+    display: none;
+}
+
+.loginbtn {
+    border: none;
+    color: black;
+}
+
+.login-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 12vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.login-content i {
+    margin-right: 10px;
+}
+
+.login-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.login-content a:hover {
+    background-color: #f1f1f1
+}
+
+.login-singup:hover .login-content {
+    display: block;
+}
+
+.dropdown:hover .loginbtn {
+    background-color: lightgray;
+}
+
+
+/* Navbar -css start here*/
+
+.nav-bar1 .navbar {
+    max-height: 36px;
+    width: 90vw;
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.brand-detail {
+    width: 10%;
+    margin-left: 5%;
+}
+
+.logo {
+    width: 120%;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.search-container {
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    height: fit-content;
+    background-color: white;
+}
+
+#searchBar{
+    width: 96%;
+    height: 25px;
+    border: none;
+}
+#searchBar:hover {
+    transition-delay: 0.15s;
+    text-decoration: none;
+    appearance: none;
+}
+
+.search-container button {
+    float: right;
+    width: fit-content;
+    height: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+#cross-icon {
+    font-style: normal;
+    font-size: 120%;
+    position: relative;
+    width: auto;
+    color: gray;
+    height: 100%;
+}
+
+.my-cart {
+    width: 5%;
+    height: auto;
+    margin-left: auto;
+    font-size: 20px;
+}
+
+
+/* ###################################### CSS FOR NAVBAR 2  ################################################### */
+
+.navbar2 {
+    width: 100vw;
+    margin-top: -15px;
+    margin-left: -8px;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    background-color: #6cd138;
+}
+
+.top-row {
+    width: 100%;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.menu {
+    list-style-type: none;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: -10px;
+}
+
+.menu-item {
+    display: inline-flex;
+}
+
+.menu-item i {
+    color: #f2f2f2;
+    font-size: 30px;
+}
+
+.menu-item button {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.menu-item a:hover {
+    background-color: darkgrey;
+    border: 2px solid darkgray;
+}
+
+
+/* Css for Side bar */
+
+.side-bar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 121112;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+/* user profile mobile view */
+
+.user-detail-mobileview {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+#user-location-mobileview {
+    display: none;
+    margin-top: 1px;
+    font-size: 10px;
+    margin-left: 38px;
+}
+
+#user-phone-mobileview {
+    display: none;
+    font-size: 10px;
+    margin-left: 38px;
+}
+
+#MyProfileMobileView {
+    display: none;
+}
+
+#MyOrderMobileView {
+    display: none;
+}
+
+#logout-mobileview {
+    display: none;
+}
+
+#side-bar-close {
+    float: right;
+    margin-top: -110px;
+    position: relative;
+    padding: 10px;
+}
+
+.side-bar a {
+    padding: 15px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 2px solid black;
+}
+
+.side-bar a:hover {
+    color: black;
+    background-color: #6cd138;
+    transition-delay: 0.2s;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Search product css */
+
+.category-wrapper {
+    display: none;
+}
+
+.bottom-row {
+    width: 100%;
+    height: auto;
+}
+
+.search-container2 {
+    width: 98%;
+    margin: auto;
+    align-items: center;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap,wrap;
+}
+
+#searchBarMob {
+    width: 96%;
+    height: 23px;
+    border: none;
+    appearance: none;
+}
+
+#searchBarMob:hover {
+    transition-delay: 0.15s;
+    text-decoration: none;
+    appearance: none;
+}
+
+.search-container2 button {
+    float: right;
+    width: fit-content;
+    height: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+#cross-icon {
+     font-style: normal;
+    font-size: 120%;
+    position: relative;
+    width: auto;
+    color: gray;
+    height: 100%;
+}
+
+
+/* Css For Login Page - Mobile view */
+
+.login-main {
+    display: none;
+    height: 55vh;
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.904);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: whitesmoke;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 20;
+    box-shadow: 5px 10px 20px #000;
+}
+
+#chk {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
+}
+
+.login-main label {
+    width: auto;
+    color: black;
+    font-size: 2em;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.login-main input {
+    width: 60%;
+    height: 30px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 10px auto;
+    padding: 2px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login-main button {
+    width: 60%;
+    height: 30px;
+    margin: 5px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.login-main button:hover {
+    background: blueviolet;
+}
+
+.login {
+    height: 300px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-25px);
+    transition: 0.8s ease-in-out;
+}
+
+.login label {
+    color: #6cd138;
+    font-size: 25px;
+    transform: scale(0.6);
+}
+
+#chk:checked~.login {
+    transform: translateY(-95%);
+}
+
+#chk:checked~.login label {
+    font-size: 30px;
+    transform: scale(1);
+}
+
+#chk:checked~.signup label {
+    transform: scale(0.6);
+}
+
+#close-btn {
+    color: red;
+    float: right;
+    margin-right: 20px;
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+/* Bank Section Css */
+
+.bank-offers {
+    margin-top: 10px;
+    width: 80vw;
+    margin-bottom: auto;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bank-offers h2 {
+    color: #444444;
+    font: 14px;
+    font-family: "Courier New", Courier, monospace;
+    padding: 5px 5px 6px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid #444444;
+}
+
+.bank-section {
+    display: grid;
+    grid-template-areas: "item1 item2" "item3 item4";
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bank-section>div {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.bank-section>div img {
+    width: 90%;
+    padding: auto;
+    height: 150px;
+}
+
+.card1 {
+    grid-area: item1;
+    margin: auto;
+}
+
+.card2 {
+    grid-area: item2;
+    margin: auto;
+}
+
+.card3 {
+    grid-area: item3;
+    margin: auto;
+}
+
+.card4 {
+    grid-area: item4;
+    margin: auto;
+}
+
+/* Main-carousel Css */
+
+.slides {
+    display: none;
+}
+
+.main-carousel {
+    width: 90vw;
+    margin: auto;
+}
+
+.carousel-container {
+    width: 100%;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Css for Sale carousel */
+
+.sale-slides {
+    display: none;
+}
+
+.sale-carousel {
+    width: 90vw;
+    margin: auto;
+}
+
+.sale-carousel-container {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.sale-carousel-container img {
+    width: 100%;
+    height: auto;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+
+/* ########### CSS FOR FOOTER ##################################*/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-links {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 90%;
+    background-color: whitesmoke;
+    margin: 1% 5%;
+    padding: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.footer-links .footer-links-next2divs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-links .footer-links-first2divs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-links .footer-div-getsocial img {
+    width: 3.5vw;
+    border-radius: 80%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.footer-links .footer-div-bigbasket,
+.footer-links .footer-div-help,
+.footer-links .footer-div-downloadapp,
+.footer-links .footer-div-getsocial {
+    width: 22vw;
+    margin: 0 1%;
+}
+
+.footer-links .footer-links-heading {
+    color: #6cd138;
+    margin: 3% 0;
+    font-size: 19px;
+}
+
+.footer-links .footer-links-li div {
+    /* margin: 2% 0; */
+    list-style: none;
+    color: slategrey;
+    font-size: 14px;
+}
+
+.footer-links .footer-links-li-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-links .footer-links-li-img div {
+    /* margin: 0 2.6px; */
+    width: 50%;
+    padding: 2px;
+}
+
+.website-info {
+    width: 90%;
+    border: 1px solid black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 5%;
+    padding: 0 0.8%;
+}
+
+.footer-nav-box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.footer-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-cards img {
+    margin: 0 4px;
+    height: 6vh;
+    width: 4.2vw;
+}
+
+.footer-cards-image2 {
+    height: 6vh;
+    width: 7.7vw;
+    line-height: 1.3;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    width: 90%;
+    background-color: whitesmoke;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 5%;
+}
+
+.footer-nav-h1 {
+    padding: 2vh 0;
+    color: #6cd138;
+    font-size: 15px;
+}
+
+.footer-nav-h2 {
+    padding: 2vh 0;
+    color: #6cd138;
+    width: 16vw;
+    font-size: 15px;
+}
+
+.footer-nav-text {
+    color: slategrey;
+    font-size: 14px;
+    margin: 1px 0 9px 0;
+}
+
+.footer-copyright {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 5vh;
+    font-size: smaller;
+}
+
+.footer-copyright-text {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 0 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-bar-2 {
+        display: none;
+    }
+    .navbar2 {
+        width: 100%;
+        align-items: center;
+        height: auto;
+        /* display: flex;
+        flex-direction: column;
+        background-color: #6cd138; */
+    }
+    .top-row {
+        width: 100%;
+        margin: auto;
+    }
+    .nav-bar1 {
+        display: contents;
+    }
+    .bank-offers {
+        margin-top: 30px;
+    }
+    .bank-section {
+        display: grid;
+        grid-template-areas: "item1 item2 item3 item4";
+    }
+    .bank-section>div {
+        width: 100%;
+        margin: auto;
+    }
+    .bank-section>div img {
+        width: 90%;
+        padding: auto;
+        height: 150px;
+        margin-left: 10px;
+    }
+    .card1 {
+        grid-area: item1;
+        margin: auto;
+    }
+    .card2 {
+        grid-area: item2;
+        margin: auto;
+    }
+    .card3 {
+        grid-area: item3;
+        margin: auto;
+    }
+    .card4 {
+        grid-area: item4;
+        margin: auto;
+    }
+    .sale-carousel-container {
+        margin-top: 50px;
+    }
+    .login-main {
+        display: none;
+        height: 570px;
+        width: 520px;
+        background-color: rgba(255, 255, 255, 0.904);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        background-color: whitesmoke;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 5px 20px 50px #000;
+        z-index: 20;
+        ;
+    }
+    #chk {
+        display: none;
+    }
+    .signup {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .login-main label {
+        color: black;
+        font-size: 2.3em;
+        justify-content: center;
+        display: flex;
+        margin: 60px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+    .login-main input {
+        width: 60%;
+        height: 35px;
+        background: #e0dede;
+        justify-content: center;
+        display: flex;
+        margin: 20px auto;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+    .login-main button {
+        width: 60%;
+        height: 40px;
+        margin: 10px auto;
+        justify-content: center;
+        display: block;
+        color: #fff;
+        background: #573b8a;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    }
+    .login-main button:hover {
+        background: #6d44b8;
+    }
+    .login {
+        height: 450px;
+        background: #eee;
+        /* background:pink; */
+        border-radius: 60% / 10%;
+        transform: translateY(-180px);
+        transition: 0.8s ease-in-out;
+    }
+    .login label {
+        color: #573b8a;
+        transform: scale(0.6);
+    }
+    #chk:checked~.login {
+        transform: translateY(-575px);
+        -webkit-transform: translateY(-575px);
+        -moz-transform: translateY(-575px);
+        -ms-transform: translateY(-575px);
+        -o-transform: translateY(-575px);
+    }
+    #chk:checked~.login label {
+        transform: scale(1);
+    }
+    #chk:checked~.signup label {
+        transform: scale(0.6);
+    }
+    #close-btn {
+        color: red;
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+}
+
+
+/* Media query for 6000px :-> footer */
+
+@media (max-width: 600px) {
+    .footer-nav-box2 {
+        display: none;
+    }
+    .footer-links-next2divs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .top-offer-image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .footer-links .footer-div-bigbasket {
+        width: 50%;
+    }
+    .footer-links .footer-div-help {
+        width: 50%;
+    }
+    .footer-links .footer-div-downloadapp {
+        width: 50%;
+    }
+    .footer-links .footer-div-getsocial {
+        width: 50%;
+    }
+    .footer-links .footer-links-next2divs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer-nav-box1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .footer-nav-h1 {
+        width: 16vw;
+    }
+    .footer-nav-text {
+        width: 84vw;
+    }
+}
+
+
+/* Top Offers and Grocery Section */
+
+.container1 {
+    width: 80vw;
+    margin: auto;
+}
+
+.container1 img {
+    border: 2px solid whitesmoke;
+}
+
+.container1 img:hover {
+    -webkit-box-shadow: 2px 2px wheat;
+    box-shadow: 2px 2px wheat;
+}
+
+.fruitsAndVegetables {
+    width: 100%;
+}
+
+.fruitsAndVegetable-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fruitsAndVegetables-wrapper1 {
+    width: 90%;
+    margin: 0 4.5vw;
+}
+
+.fruitsAndVegetables-wrapper1 img {
+    width: 90%;
+    height: 25vh;
+}
+
+.fruitsAndVegetables-wrapper2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 4.5vw;
+}
+
+.fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper21 {
+    width: 45%;
+    margin: 0 1vw;
+}
+
+.fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper21 img {
+    width: 90%;
+    height: 25vh;
+}
+
+.fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper22 {
+    width: 45%;
+    margin: 0 1vw;
+}
+
+.fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper22 img {
+    width: 90%;
+    height: 25vh;
+}
+
+.fruitsAndVegetables-wrapper3 {
+    display: none;
+}
+
+.fruitsAndVegetables-wrapper3 .fruitsAndVegetables-wrapper31 {
+    display: none;
+}
+
+.fruitsAndVegetables-wrapper3 .fruitsAndVegetables-wrapper32 {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .category-wrapper {
+        display: block;
+    }
+    .fruitsAndVegetable-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+    }
+    .fruitsAndVegetables-wrapper1 {
+        width: 65%;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .fruitsAndVegetables-wrapper1 img {
+        width: 100%;
+        height: 50vh;
+    }
+    .fruitsAndVegetables-wrapper2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 35%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 0;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper21 {
+        width: 100%;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper21 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper22 {
+        width: 100%;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper22 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .fruitsAndVegetables-wrapper31 {
+        display: none;
+    }
+    .fruitsAndVegetables-wrapper32 {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .fruitsAndVegetable-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+    }
+    .fruitsAndVegetables-wrapper1 {
+        width: 50%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .fruitsAndVegetables-wrapper1 img {
+        width: 100%;
+        height: 50vh;
+    }
+    .fruitsAndVegetables-wrapper2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+        width: 25%;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper21 {
+        width: 100%;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper21 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper22 {
+        width: 100%;
+    }
+    .fruitsAndVegetables-wrapper2 .fruitsAndVegetables-wrapper22 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .fruitsAndVegetables-wrapper3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 25%;
+        padding: 10px;
+    }
+    .fruitsAndVegetables-wrapper3 .fruitsAndVegetables-wrapper31 {
+        width: 100%;
+        display: block;
+    }
+    .fruitsAndVegetables-wrapper3 .fruitsAndVegetables-wrapper31 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .fruitsAndVegetables-wrapper3 .fruitsAndVegetables-wrapper32 {
+        width: 100%;
+        display: block;
+    }
+    .fruitsAndVegetables-wrapper3 .fruitsAndVegetables-wrapper32 img {
+        width: 90%;
+        height: 25vh;
+    }
+}
+
+.winterBeverages {
+    width: 100%;
+}
+
+.winterBeverages-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+.winterBeverages-wrapper1 {
+    width: 100%;
+    margin: 0% 4%;
+}
+
+.winterBeverages-wrapper1 img {
+    width: 90%;
+    height: 25vh;
+}
+
+.winterBeverages-wrapper2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 1px;
+}
+
+.winterBeverages-wrapper2 .winterBeverages-wrapper21 {
+    width: 50%;
+}
+
+.winterBeverages-wrapper2 .winterBeverages-wrapper21 img {
+    width: 90%;
+    height: 25vh;
+}
+
+.winterBeverages-wrapper2 .winterBeverages-wrapper22 {
+    width: 50%;
+}
+
+.winterBeverages-wrapper2 .winterBeverages-wrapper22 img {
+    width: 90%;
+    height: 25vh;
+}
+
+.winterBeverages-wrapper3 {
+    display: none;
+}
+
+.winterBeverages-wrapper3 .winterBeverages-wrapper31 {
+    display: none;
+}
+
+.winterBeverages-wrapper3 .winterBeverages-wrapper32 {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .winterBeverages-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+    }
+    .winterBeverages-wrapper1 {
+        width: 65%;
+        margin: 0px 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .winterBeverages-wrapper1 img {
+        width: 100%;
+        height: 50vh;
+    }
+    .winterBeverages-wrapper2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 30%;
+        margin: 10px 1px;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper21 {
+        width: 100%;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper21 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper22 {
+        width: 100%;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper22 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .winterBeverages-wrapper31 {
+        display: none;
+    }
+    .winterBeverages-wrapper32 {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .winterBeverages-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+    }
+    .winterBeverages-wrapper1 {
+        width: 50%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .winterBeverages-wrapper1 img {
+        width: 100%;
+        height: 50vh;
+    }
+    .winterBeverages-wrapper2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 25%;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper21 {
+        width: 100%;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper21 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper22 {
+        width: 100%;
+    }
+    .winterBeverages-wrapper2 .winterBeverages-wrapper22 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .winterBeverages-wrapper3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 25%;
+        padding: 10px;
+    }
+    .winterBeverages-wrapper3 .winterBeverages-wrapper31 {
+        width: 100%;
+        display: block;
+    }
+    .winterBeverages-wrapper3 .winterBeverages-wrapper31 img {
+        width: 90%;
+        height: 25vh;
+    }
+    .winterBeverages-wrapper3 .winterBeverages-wrapper32 {
+        width: 100%;
+        display: block;
+    }
+    .winterBeverages-wrapper3 .winterBeverages-wrapper32 img {
+        width: 90%;
+        height: 25vh;
+    }
+}
+
+.yourDailyStaples-wrapper2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper21,
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper22 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper21 img,
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper22 img {
+    margin: 0vh 10%;
+    width: 90%;
+}
+
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper23,
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper24,
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper25,
+.yourDailyStaples-wrapper2 .yourDailyStaples-wrapper26 {
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .yourDailyStaples-wrapper2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper21,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper22,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper23,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper24 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper21 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper22 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper23 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper24 img {
+        margin: 0vh 10%;
+        width: 90%;
+    }
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper25,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper26 {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .yourDailyStaples-wrapper2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 90%;
+        margin: 0% 5vw;
+    }
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper21,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper22,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper23,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper24,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper25,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper26 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+    }
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper21 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper22 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper23 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper24 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper25 img,
+    .yourDailyStaples-wrapper2 .yourDailyStaples-wrapper26 img {
+        margin: 0vh 1vw;
+        width: 90%;
+    }
+}
+
+.topOffers-wrapper2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+.topOffers-wrapper2 img {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2vw;
+    width: 100%;
+}
